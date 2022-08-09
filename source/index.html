@@ -3,8 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="./css/style.css">
   </head>
-  <body class="page__body">
+  <body class="page-body">
 
     <header class="header">
 
@@ -13,7 +14,7 @@
       </a>
 
       <nav class="navigation">
-        <button class="navigation__toggle" type="button">
+        <button class="navigation__toggle navigation__toggle--open" type="button">
           <span class="visually-hidden">Открыть меню.</span>
         </button>
         <div class="navigation__wrapper">
@@ -39,21 +40,21 @@
     <main class="main-index">
 
       <div class="hero hero-size-m">
-        <img class="hero__text" src="./img/welcome-text.svg" width="282" height="214" alt="Welcome to the gorgeous Sedona - Because The Grand Canyon sucks!">
+        <img class="hero-size-m__text" src="./img/welcome-text.svg" width="282" height="214" alt="Welcome to the gorgeous Sedona - Because The Grand Canyon sucks!">
       </div>
 
       <div class="about">
 
-        <div class="main-intro">
-          <h1 class="main-intro__title title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
-          <p class="main-intro__desc desc">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
+        <div class="main-intro intro">
+          <h1 class="intro__title title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
+          <p class="intro__desc desc">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
         </div>
 
         <ol class="features">
           <li class="features__item feature feature--primary feature--detailed">
             <div class="feature-picture-wrap">
               <div class="feature-text-wrap">
-                <h2 class="feature__title title">Настоящий городок</h2>
+                <h2 class="feature__title feature__title--first title">Настоящий городок</h2>
                 <p class="feature__number">— №1 —</p>
                 <p class="feature__desc desc">Седона не аттракцион для туристов, там течёт своя жизнь</p>
               </div>
@@ -110,7 +111,7 @@
 
       <section class="hotel-search">
 
-        <h2 class="hotel-search__title title-second">Заинтересовались?</h2>
+        <h2 class="hotel-search__title title title-second">Заинтересовались?</h2>
 
         <p class="hotel-search__desc desc">
           Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне
@@ -131,7 +132,7 @@
 
     <footer class="footer">
 
-      <a class="footer__hashtag title-second" href="https://twitter.com/hashtag/visitsedona">#visitsedona</a>
+      <a class="footer__hashtag hashtag title title-second" href="https://twitter.com/hashtag/visitsedona">#visitsedona</a>
 
       <ul class="footer__social-media-list socials">
         <li class="socials__item">
@@ -161,7 +162,7 @@
       </ul>
 
       <a class="footer__developer-link developer-link" href="https://htmlacademy.ru/" target="_blank">
-        <span class="developer-link__title">Разработано</span>
+        <span class="developer-link__title desc">Разработано</span>
         <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M18.15 2.25h-.1L4.5 3.59v23.63l13.55 7.66 13.45-7.66V3.6L18.15 2.25ZM29.6 13.83l-11.54-6.5v-.1h-.1l-.1-.1v.1L6.4 13.83V5.22l11.54-1.15 11.64 1.15v8.6ZM17.95 8.76l11.54 6.4-4.51 2.5-7.13-4.02v1.33l5.92 3.35-.9.48-5.02-2.87v1.34l3.81 2.2-.8.48-3.01-1.72v1.34l1.9 1.05-1.8 1.05-11.44-6.4 11.44-6.51ZM6.41 16.7l11.44 6.5v.96l-7.93-4.5V21l8.03 4.6v1.05l-8.03-4.5v1.34l8.03 4.6 8.13-4.7v-4.97l3.41-1.91v9.56l-11.54 6.6-11.54-6.5V16.7Z" fill="#000"/>
         </svg>
