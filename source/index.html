@@ -2,6 +2,7 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="./css/style.css">
   </head>
@@ -14,10 +15,11 @@
           <img class="logo__picture" src="./img/sedona-logo.svg" width="185" height="96" alt="Логотип сайта Седона.">
         </a>
 
-        <nav class="navigation">
-          <button class="navigation__toggle navigation__toggle--open" type="button">
-            <span class="visually-hidden">Открыть меню.</span>
-          </button>
+        <button class="header__menu-toggle header__menu-toggle--closed" type="button">
+          <span class="visually-hidden">Открыть меню.</span>
+        </button>
+
+        <nav class="navigation navigation--closed">
           <div class="navigation__wrapper">
             <ul class="navigation__list site-list">
               <li class="site-list__item">

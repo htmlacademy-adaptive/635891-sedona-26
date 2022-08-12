@@ -30,5 +30,18 @@
 }
 
 .form__button {
-  width: 100%;
+  width: 281px;
+}
+
+@media (min-width: @tablet-width) {
+  .form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .form > :nth-child(3),
+  .form > :nth-child(4),
+  .form > :nth-child(5) {
+    grid-column: 1/3;
+  }
 }

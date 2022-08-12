@@ -9,3 +9,19 @@
   margin: 0;
   padding: 0;
 }
+
+@media (min-width: @tablet-width) {
+  .features {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .features > :nth-child(1),
+  .features > :nth-child(2) {
+    grid-column: 1/4;
+  }
+
+  .features__extra-list {
+    display: flex;
+  }
+}
