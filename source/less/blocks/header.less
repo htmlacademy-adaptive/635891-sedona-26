@@ -1,12 +1,12 @@
 .header {
   min-height: 56px;
   position: relative;
-  display: flex;
-  justify-content: center;
 }
 
 .header__logo {
-  z-index: 1;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .header__menu-toggle {
@@ -30,17 +30,5 @@
 @media (min-width: @tablet-width) {
   .header__menu-toggle {
     display: none;
-  }
-
-  .header__logo {
-    position: absolute;
-    top: 0;
-    left: 291px;
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .header__logo {
-    left: 507px;
   }
 }
