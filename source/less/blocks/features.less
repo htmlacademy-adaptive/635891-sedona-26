@@ -1,13 +1,10 @@
 .features {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+  .list-clear;
 }
 
 .features__extra-list {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+  .list-clear;
+  background-color: @white;
 }
 
 @media (min-width: @tablet-width) {
@@ -16,12 +13,12 @@
     grid-template-columns: repeat(3, 1fr);
   }
 
-  .features > :nth-child(1),
-  .features > :nth-child(2) {
+  .features__item--extended {
     grid-column: 1/4;
   }
 
   .features__extra-list {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
   }
 }

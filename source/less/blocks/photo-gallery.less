@@ -1,7 +1,5 @@
 .photo-gallery {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+  .list-clear;
 }
 
 @media (min-width: @tablet-width) {
@@ -10,7 +8,7 @@
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .photo-gallery > :nth-child(1) {
+  .photo-gallery__item--extended {
     grid-column: 1/3;
   }
 }
@@ -20,7 +18,7 @@
     grid-template-columns: repeat(3, 1fr);
   }
 
-  .photo-gallery > :nth-child(1) {
+  .photo-gallery__item--extended {
     grid-column: 1/4;
   }
 }
