@@ -8,16 +8,45 @@
 
   &--secondary {
     background-color: @grey-light-extra;
+    padding: 24px 20px;
   }
 }
 
 .feature__picture {
-  margin: 0 auto;
   display: block;
-  object-fit: contain;
+  object-fit: cover;
+}
+
+.feature__title {
+  margin-bottom: 11px;
 }
 
 .feature__number {
-  margin: 0;
+  margin-bottom: 17px;
   padding: 0;
+}
+
+.feature__text-wrap {
+  padding: 35px 20px;
+
+  &--first {
+    padding-top: 54px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .feature {
+    &--secondary {
+      padding-block: 42px;
+    }
+  }
+
+  .feature__text-wrap {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .feature__picture-wrap {
+    display: flex;
+  }
 }

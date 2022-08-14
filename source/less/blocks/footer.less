@@ -1,11 +1,35 @@
+.footer {
+  padding: 28px 20px 23px;
+}
+
 .footer__hashtag {
-  margin: 28px 18px 33px;
+  margin-bottom: 33px;
 }
 
 .footer__social-media-list {
-  margin: 0 20px 40px;
+  margin-bottom: 40px;
 }
 
-.footer__developer-link {
-  margin: 0 20px 23px;
+@media (min-width: @tablet-width) {
+  .footer {
+    padding: 36px 60px 36px 45px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer__hashtag {
+    margin: 0;
+  }
+
+  .footer__social-media-list {
+    margin: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .footer {
+    padding-left: 104px;
+    padding-right: 120px;
+  }
 }

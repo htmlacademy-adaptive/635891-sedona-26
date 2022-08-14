@@ -1,11 +1,24 @@
 .features {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+  .list-clear;
 }
 
 .features__extra-list {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+  .list-clear;
+  background-color: @white;
+}
+
+@media (min-width: @tablet-width) {
+  .features {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .features__item--extended {
+    grid-column: 1/4;
+  }
+
+  .features__extra-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
 }

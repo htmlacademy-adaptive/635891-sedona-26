@@ -7,8 +7,20 @@
 }
 
 .page-body__container {
-  max-width: 320px;
+  width: 320px;
   margin: 0 auto;
   background-color: @white;
   box-shadow: 0 5px 15px rgba(0, 1, 1, 0.2);
+}
+
+@media (min-width: @tablet-width) {
+  .page-body__container {
+    width: 768px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-body__container {
+    width: 1200px;
+  }
 }
