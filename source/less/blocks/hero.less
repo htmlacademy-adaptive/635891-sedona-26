@@ -1,6 +1,6 @@
 .hero {
   background-color: @brown;
-  background-image: url("../img/hero-picture.jpg");
+  background-repeat: no-repeat;
 }
 
 .hero__text {
@@ -8,10 +8,43 @@
   margin: 0 auto;
 }
 
-.hero--size-s {
-  padding: 52px 20px 67px;
+.hero--size-m {
+  background-image: url("../img/hero-index-mobile.jpg");
+  height: 389px;
+  background-position: 50% 0;
+  padding-top: 90px;
 }
 
-.hero--size-m {
-  padding: 90px 20px 85px;
+.hero--size-s {
+  background-image: url("../img/hero-pages-mobile.jpg");
+  height: 158px;
+  padding-top: 52px;
+  background-position: 50% -56px;
+}
+
+@media (min-width: @tablet-width) {
+  .hero--size-s,
+  .hero--size-m {
+    background-image: url("../img/hero-picture.jpg");
+  }
+
+  .hero--size-m {
+    height: 517px;
+  }
+
+  .hero--size-s {
+    height: 290px;
+    background-position: 50% -228px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .hero {
+    background-size: cover;
+  }
+
+  .hero--size-s {
+    height: 301px;
+    background-position: 50% -217px;
+  }
 }
