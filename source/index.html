@@ -15,11 +15,10 @@
           <img class="logo__picture" src="./img/sedona-logo.svg" width="185" height="96" alt="Логотип сайта Седона.">
         </a>
 
-        <button class="header__menu-toggle header__menu-toggle--closed" type="button">
-          <span class="visually-hidden">Открыть меню.</span>
-        </button>
-
-        <nav class="navigation navigation--closed">
+        <nav class="navigation navigation--closed navigation--nojs">
+          <button class="navigation__toggle" type="button">
+            <span class="visually-hidden">Открыть меню.</span>
+          </button>
           <div class="navigation__wrapper">
             <ul class="navigation__list site-list">
               <li class="site-list__item">
@@ -49,14 +48,14 @@
         <div class="about">
 
           <div class="main-intro intro">
-            <h1 class="intro__title title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
+            <h1 class="intro__title title">Седона — небольшой городок в Аризоне,<br> заслуживающий большего!</h1>
             <p class="intro__description description">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
           </div>
 
           <ol class="features">
             <li class="features__item features__item--extended feature feature--primary">
               <div class="feature__picture-wrap">
-                <div class="feature__text-wrap feature__text-wrap--first">
+                <div class="feature__text-wrap feature__text-wrap--limited feature__text-wrap--first">
                   <h2 class="feature__title title">Настоящий городок</h2>
                   <p class="feature__number">— №1 —</p>
                   <p class="feature__description description">Седона не аттракцион для туристов, там течёт своя жизнь</p>
@@ -80,7 +79,7 @@
             </li>
             <li class="features__item features__item--extended feature feature--primary">
               <div class="feature__picture-wrap">
-                <div class="feature__text-wrap">
+                <div class="feature__text-wrap feature__text-wrap--limited">
                   <h2 class="feature__title title">Там есть мост дьявола</h2>
                   <p class="feature__number">— №2 —</p>
                   <p class="feature__description description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
@@ -127,7 +126,7 @@
         <section class="map">
 
           <h2 class="visually-hidden">Мы на карте.</h2>
-          <img class="map__picture" src="./img/map.png" width="1200" height="350" alt="Карта с месторасположением города Седоны.">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d593340.2516378257!2d-111.81235262842978!3d34.761316255403365!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1660582217255!5m2!1sru!2sru" width="600" height="450" style="border: 0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
         </section>
 
@@ -174,5 +173,6 @@
       </footer>
     </div>
 
+  <script src="./js/script.js"></script>
   </body>
 </html>

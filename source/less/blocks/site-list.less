@@ -2,9 +2,20 @@
   .list-clear;
   text-align: center;
   background-color: @blue-light;
+  position: relative;
 
   &__item {
     padding: 17px 20px 12px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(1, 1, 1, 0.2);
+  }
+
+  &__item:first-child {
+    border-top: none;
+  }
+
+  &__item:last-child {
+    border-bottom: none;
   }
 
   &__link {
@@ -25,6 +36,7 @@
 
     &__item {
       padding: 18px 10px 17px;
+      border: none;
     }
 
     &__link {

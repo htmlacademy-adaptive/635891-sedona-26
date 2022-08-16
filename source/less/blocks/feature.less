@@ -46,7 +46,17 @@
     flex-direction: column;
   }
 
+  .feature__text-wrap--limited {
+    width: 256px;
+  }
+
   .feature__picture-wrap {
     display: flex;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .feature__text-wrap--limited {
+    width: 400px;
   }
 }

@@ -9,27 +9,8 @@
   transform: translateX(-50%);
 }
 
-.header__menu-toggle {
-  width: 23px;
-  height: 22px;
-  border: none;
-  background-color: transparent;
-  position: absolute;
-  top: 17px;
-  right: 20px;
-  cursor: pointer;
-
-  &--closed {
-    background-image: url("../img/icons/menu-open.svg");
-  }
-
-  &--opened {
-    background-image: url("../img/icons/menu-close.svg");
-  }
-}
-
 @media (min-width: @tablet-width) {
-  .header__menu-toggle {
-    display: none;
+  .header__logo {
+    z-index: 3;
   }
 }
