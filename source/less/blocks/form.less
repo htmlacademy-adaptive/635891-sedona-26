@@ -1,8 +1,3 @@
-.form {
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
 .form__legend {
   text-transform: uppercase;
   font-size: 12px;
@@ -43,5 +38,23 @@
   .form__button-wrapper {
     display: flex;
     justify-content: space-between;
+  }
+
+  .form__group--name {
+    margin-right: 44px;
+  }
+
+  .form__group--contacts {
+    margin-left: 44px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form__group--name {
+    margin-right: 63px;
+  }
+
+  .form__group--contacts {
+    margin-left: 63px;
   }
 }

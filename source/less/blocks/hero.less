@@ -1,6 +1,22 @@
 .hero {
   background-color: @brown;
   background-repeat: no-repeat;
+  position: relative;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  background-repeat: no-repeat;
+  height: 56px;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  background-size: 100% auto;
+
+  @media (max-width: @mobile-width-only) {
+    background-image: url("../img/divider-mobile.svg");
+  }
 }
 
 .hero__text {
@@ -36,6 +52,10 @@
     height: 290px;
     background-position: 50% -228px;
   }
+
+  .hero::before {
+    background-image: url("../img/divider-tablet.svg");
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -46,5 +66,9 @@
   .hero--size-s {
     height: 301px;
     background-position: 50% -217px;
+  }
+
+  .hero::before {
+    background-image: url("../img/divider.svg");
   }
 }

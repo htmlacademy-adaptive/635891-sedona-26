@@ -82,13 +82,13 @@
                 <h2 class="field-group__title title">Контактная информация:</h2>
                 <ul class="field-group__list">
                   <li class="field-group__item">
-                    <div class="field">
+                    <div class="field field--decorated field--phone">
                       <label class="field__label description" for="contact-phone">Контактный телефон*:</label>
                       <input class="field__input field__input--phone" id="contact-phone" type="tel" name="user-phone" placeholder="Введите телефон" required>
                     </div>
                   </li>
                   <li class="field-group__item">
-                    <div class="field">
+                    <div class="field field--decorated field--mail">
                       <label class="field__label description" for="e-mail">Электронная почта*:</label>
                       <input class="field__input field__input--email" id="e-mail" type="email" name="user-email" placeholder="Введите e-mail" required>
                     </div>
@@ -99,23 +99,29 @@
 
             <div class="form__group field-group">
               <h2 class="field-group__title title">Ваше общее впечатление:</h2>
-              <ul class="field-group__list">
+              <ul class="field-group__list field-group__list--radio">
                 <li class="field-group__item">
                   <div class="control">
-                    <input class="control__radio" type="radio" id="positive-impression" name="impression" value="positive" checked>
-                    <label class="control__label" for="positive-impression">Скорее положительное</label>
+                    <input class="control__radio control__button--custom" type="radio" id="positive-impression" name="impression" value="positive" checked>
+                    <label class="control__label" for="positive-impression">
+                      <span>Скорее положительное</span>
+                    </label>
                   </div>
                 </li>
                 <li class="field-group__item">
                   <div class="control">
-                    <input class="control__radio" type="radio" id="negative-impression" name="impression" value="negative">
-                    <label class="control__label" for="negative-impression">Скорее отрицательное</label>
+                    <input class="control__radio control__button--custom" type="radio" id="negative-impression" name="impression" value="negative">
+                    <label class="control__label" for="negative-impression">
+                      <span>Скорее отрицательное</span>
+                    </label>
                   </div>
                 </li>
                 <li class="field-group__item">
                   <div class="control">
-                    <input class="control__radio" type="radio" id="indifferent-impression" name="impression" value="indifferent">
-                    <label class="control__label" for="indifferent-impression">Затрудняюсь ответить</label>
+                    <input class="control__radio control__button--custom" type="radio" id="indifferent-impression" name="impression" value="indifferent">
+                    <label class="control__label" for="indifferent-impression">
+                      <span>Затрудняюсь ответить</span>
+                    </label>
                   </div>
                 </li>
               </ul>
@@ -123,29 +129,37 @@
 
             <div class="form__group field-group">
               <h2 class="field-group__title title">Посещенные достопримечательности:</h2>
-              <ul class="field-group__list">
+              <ul class="field-group__list field-group__list--checkbox">
                 <li class="field-group__item">
                   <div class="control">
-                    <input class="control__checkbox" type="checkbox" id="bridge" name="sights" value="devil-bridge" checked>
-                    <label class="control__label" for="bridge">Мост Дьявола</label>
+                    <input class="control__checkbox control__button--custom" type="checkbox" id="bridge" name="sights" value="devil-bridge" checked>
+                    <label class="control__label" for="bridge">
+                      <span>Мост Дьявола</span>
+                    </label>
                   </div>
                 </li>
                 <li class="field-group__item">
                   <div class="control">
-                    <input class="control__checkbox" type="checkbox" id="mountain" name="sights" value="bell-mountain" checked>
-                    <label class="control__label" for="mountain">Гора-Колокол</label>
+                    <input class="control__checkbox control__button--custom" type="checkbox" id="mountain" name="sights" value="bell-mountain" checked>
+                    <label class="control__label" for="mountain">
+                      <span>Гора-Колокол</span>
+                    </label>
                   </div>
                 </li>
                 <li class="field-group__item">
                   <div class="control">
-                    <input class="control__checkbox" type="checkbox" id="park" name="sights" value="slide-park" checked>
-                    <label class="control__label" for="park">Слайд-парк</label>
+                    <input class="control__checkbox control__button--custom" type="checkbox" id="park" name="sights" value="slide-park" checked>
+                    <label class="control__label" for="park">
+                      <span>Слайд-парк</span>
+                    </label>
                   </div>
                 </li>
                 <li class="field-group__item">
                   <div class="control">
-                    <input class="control__checkbox" type="checkbox" id="cliffs" name="sights" value="red-cliffs">
-                    <label class="control__label" for="cliffs">Красные скалы</label>
+                    <input class="control__checkbox control__button--custom" type="checkbox" id="cliffs" name="sights" value="red-cliffs">
+                    <label class="control__label" for="cliffs">
+                      <span>Красные скалы</span>
+                    </label>
                   </div>
                 </li>
               </ul>

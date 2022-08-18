@@ -28,3 +28,20 @@
     justify-content: space-between;
   }
 }
+
+@media (min-width: @desktop-width) {
+  .photo-card {
+    position: relative;
+  }
+
+  .photo-card__info-wrapper {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    overflow: auto;
+    color: @white;
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-height: 80%;
+  }
+}

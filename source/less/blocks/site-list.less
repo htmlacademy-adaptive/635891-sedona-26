@@ -30,7 +30,7 @@
 
 @media (min-width: @tablet-width) {
   .site-list {
-    background-color: transparent;
+    background-color: @white;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
 
@@ -45,12 +45,22 @@
       line-height: 21px;
     }
 
+    &__link:hover {
+      color: @blue-light;
+    }
+
+    &__link:active {
+      color: @black;
+      opacity: 0.3;
+    }
+
     &__link--current {
       color: @brown;
     }
   }
 
-  .site-list > :nth-child(3) {
+  .site-list > :nth-child(3),
+  .site-list > :nth-child(7) {
     grid-column: 4;
   }
 }
