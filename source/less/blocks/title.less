@@ -10,3 +10,26 @@
   font-size: 21px;
   line-height: 26px;
 }
+
+@media (min-width: @tablet-width) {
+  .title--decorated {
+    position: relative;
+  }
+
+  .title--decorated::before {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    background-color: #dbdbdb;
+    top: 50%;
+    left: 0;
+  }
+
+  .title--decorated span {
+    background-color: @white;
+    padding-inline: 60px;
+    position: absolute;
+    left: 22%;
+  }
+}
