@@ -7,9 +7,9 @@
 .like-rating__button {
   border: 0;
   background-color: transparent;
-  background-image: url("../img/icons/like-icon.svg");
   width: 23px;
   height: 21px;
+  margin-right: 9px;
 
   &:hover {
     opacity: 60%;
@@ -17,5 +17,15 @@
 
   &:active {
     opacity: 30%;
+  }
+}
+
+.like-rating__button svg {
+  fill: #aaaaaa;
+}
+
+@media (min-width: @desktop-width) {
+  .like-rating__button svg {
+    fill: @white;
   }
 }
