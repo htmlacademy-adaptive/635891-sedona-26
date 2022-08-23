@@ -28,6 +28,20 @@
   }
 }
 
+@media (max-width: @mobile-width-only) {
+  .site-list__item:hover {
+    background-color: @blue;
+  }
+
+  .site-list__item:active {
+    background-color: @blue-dark;
+  }
+
+  .site-list__item:active .site-list__link {
+    color: rgba(255, 255, 255, 0.3);
+  }
+}
+
 @media (min-width: @tablet-width) {
   .site-list {
     background-color: @white;

@@ -1,15 +1,25 @@
-.gallery {
-  padding: 50px 20px 0;
+@media (max-width: @mobile-width-only) {
+  .gallery__intro {
+    margin: 33px 20px 20px;
+  }
 }
 
 @media (min-width: @tablet-width) {
   .gallery {
-    padding: 67px 60px 40px;
+    padding-inline: 60px;
+  }
+
+  .gallery__intro {
+    margin: 62px 95px 62px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .gallery {
-    padding: 65px 0 84px;
+    padding: 0;
+  }
+
+  .gallery__intro {
+    margin: 100px 370px 65px;
   }
 }

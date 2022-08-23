@@ -1,60 +1,82 @@
 .form__legend {
   text-transform: uppercase;
-  font-size: 12px;
-  line-height: 21px;
-  color: @black-light;
-  opacity: 0.6;
   text-align: right;
   margin: 0;
-}
-
-.form__group {
-  padding-top: 24px;
-  padding-bottom: 24px;
-}
-
-.form__group--name {
-  padding-bottom: 39px;
-}
-
-.form__group--contacts {
-  padding-bottom: 34px;
+  color: @black-light;
 }
 
 .form__group--textarea {
   padding-bottom: 56px;
 }
 
-.form__button {
-  width: 281px;
+@media (max-width: @mobile-width-only) {
+  .form__group {
+    padding: 24px 20px;
+    border-top: 1px solid @grey;
+  }
+
+  .form__button {
+    width: 281px;
+  }
+
+  .form__button-wrapper {
+    margin: 0 20px 24px;
+  }
+
+  .form__legend {
+    opacity: 0.6;
+    font-size: 12px;
+  }
 }
 
 @media (min-width: @tablet-width) {
   .form__contacts-wrapper {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 48px;
   }
 
   .form__button-wrapper {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    margin-bottom: 64px;
   }
 
   .form__group--name {
-    margin-right: 44px;
+    padding-right: 44px;
+    padding-bottom: 15px;
+    border-right: 1px solid #dbdbdb;
   }
 
   .form__group--contacts {
-    margin-left: 44px;
+    padding-left: 44px;
+    padding-bottom: 15px;
+  }
+
+  .form__group--single {
+    margin-bottom: 48px;
+  }
+
+  .form__button {
+    width: 324px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .form__group--name {
-    margin-right: 63px;
+    padding-right: 63px;
   }
 
   .form__group--contacts {
-    margin-left: 63px;
+    padding-left: 63px;
+  }
+
+  .form__group--single {
+    margin-bottom: 56px;
+  }
+
+  .form__button {
+    width: 384px;
   }
 }

@@ -12,7 +12,7 @@
 
   @media (max-width: @mobile-width-only) {
     .feature__text-wrap--limited {
-      padding: 39px 20px 35px;
+      padding: 40px 20px 35px;
     }
 
     &--secondary {
@@ -21,6 +21,15 @@
 
     &--secondary-first {
       padding-top: 26px;
+    }
+
+    &--secondary:not(:last-child)::after {
+      content: "";
+      display: block;
+      height: 1px;
+      background-color: #d6d6d6;
+      position: relative;
+      bottom: -24px;
     }
 
     &--secondary-last {
@@ -62,6 +71,10 @@
 
   .feature__picture-wrap {
     display: flex;
+
+    &--reversed {
+      flex-direction: row-reverse;
+    }
   }
 }
 

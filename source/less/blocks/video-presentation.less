@@ -1,5 +1,4 @@
 .video-presentation {
-  padding-top: 17px;
   text-align: center;
 }
 
@@ -7,14 +6,33 @@
   margin-bottom: 30px;
 }
 
+@media (max-width: @mobile-width-only) {
+  .video-presentation {
+    padding: 17px 20px 0;
+    border-top: 1px solid @grey;
+
+    &__description {
+      margin-bottom: 38px;
+    }
+  }
+}
+
 @media (min-width: @tablet-width) {
   .video-presentation {
-    padding: 52px 60px 40px;
+    padding: 58px 0 40px;
+
+    &__description {
+      margin: 0 100px 66px;
+    }
   }
 }
 
 @media (min-width: @desktop-width) {
   .video-presentation {
     padding-top: 63px 200px 84px;
+
+    &__description {
+      margin: 0 378px 72px;
+    }
   }
 }
