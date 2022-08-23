@@ -1,5 +1,8 @@
 .footer {
   padding: 28px 20px 23px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .footer__hashtag {
@@ -10,10 +13,18 @@
   margin-bottom: 40px;
 }
 
+.footer__hashtag:hover {
+  color: @blue-light;
+}
+
+.footer__hashtag:active {
+  color: @grey-dark-extra;
+}
+
 @media (min-width: @tablet-width) {
   .footer {
     padding: 36px 60px 36px 45px;
-    display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
   }
@@ -29,7 +40,6 @@
 
 @media (min-width: @desktop-width) {
   .footer {
-    padding-left: 104px;
-    padding-right: 120px;
+    padding-inline: 120px;
   }
 }

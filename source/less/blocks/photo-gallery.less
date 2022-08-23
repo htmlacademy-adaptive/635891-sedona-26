@@ -2,6 +2,13 @@
   .list-clear;
 }
 
+@media (max-width: @mobile-width-only) {
+  .photo-gallery__item {
+    padding: 25px 20px;
+    border-top: 1px solid @grey;
+  }
+}
+
 @media (min-width: @tablet-width) {
   .photo-gallery {
     display: grid;

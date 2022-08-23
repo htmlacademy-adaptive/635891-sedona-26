@@ -11,3 +11,33 @@
   width: 100%;
   padding: 16px;
 }
+
+.field-group__item:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+@media (min-width: @tablet-width) {
+  .field-group__list {
+    &--radio,
+    &--checkbox {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  .field-group__title {
+    margin-bottom: 28px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .field-group__list {
+    &--radio {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    &--checkbox {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+}
