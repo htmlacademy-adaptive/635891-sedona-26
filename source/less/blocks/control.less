@@ -2,6 +2,8 @@
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
+  cursor: pointer;
+  position: relative;
 }
 
 .control__label span {
@@ -40,12 +42,24 @@
   border-radius: 50%;
 }
 
-.control__button--custom[type="checkbox"]:checked + label::before {
+.control__button--custom[type="checkbox"]:checked + label::after {
   background-image: url("../img/icons/checkbox-mark.svg");
+  content: "";
+  position: absolute;
+  width: 22px;
+  height: 16px;
+  top: 15px;
+  left: 12px;
 }
 
-.control__button--custom[type="radio"]:checked + label::before {
+.control__button--custom[type="radio"]:checked + label::after {
   background-image: url("../img/icons/radio-mark.svg");
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  left: 15px;
+  top: 15px;
 }
 
 .control__button--custom:not(:disabled) + label:hover::before {
@@ -54,6 +68,10 @@
 
 .control__button--custom:not(:disabled) + label:active::before {
   background-color: @grey-dark;
+}
+
+.control__button--custom:not(:disabled) + label:active::after {
+  opacity: 0.3;
 }
 
 .control__button--custom:not(:disabled) + label:focus::before {
