@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="./css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body class="page-body">
 
@@ -54,7 +55,11 @@
           <ul class="photo-gallery">
             <li class="photo-gallery__item photo-gallery__item--extended photo-card">
               <a class="photo-card__picture-link" href="#">
-                <img class="photo-card__picture" src="./img/gallery/photo-1-mobile.jpg" width="280" height="280" alt="Вечерняя дорога через пустыню.">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="./img/gallery/photo-1-desktop.jpg 1x, ./img/gallery/photo-1-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="./img/gallery/photo-1-tablet.jpg 1x, ./img/gallery/photo-1-tablet@2x.jpg 2x">
+                  <img class="photo-card__picture" src="./img/gallery/photo-1-mobile.jpg" srcset="./img/gallery/photo-1-mobile@2x.jpg 2x" width="280" height="280" alt="Вечерняя дорога через пустыню.">
+                </picture>
               </a>
               <div class="photo-card__info-wrapper">
                 <div class="photo-card__text-wrapper">
@@ -73,7 +78,11 @@
             </li>
             <li class="photo-gallery__item photo-card">
               <a class="photo-card__picture-link" href="#">
-                <img class="photo-card__picture" src="./img/gallery/photo-2-mobile.jpg" width="280" height="280" alt="Кактусы и растительность в каньоне.">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="./img/gallery/photo-2-desktop.jpg 1x, ./img/gallery/photo-2-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="./img/gallery/photo-2-tablet.jpg 1x, ./img/gallery/photo-2-tablet@2x.jpg 2x">
+                  <img class="photo-card__picture" src="./img/gallery/photo-2-mobile.jpg" srcset="./img/gallery/photo-2-mobile@2x.jpg 2x" width="280" height="280" alt="Кактусы и растительность в каньоне.">
+                </picture>
               </a>
               <div class="photo-card__info-wrapper">
                 <div class="photo-card__text-wrapper">
@@ -92,7 +101,11 @@
             </li>
             <li class="photo-gallery__item photo-card">
               <a class="photo-card__picture-link" href="#">
-                <img class="photo-card__picture" src="./img/gallery/photo-3-mobile.jpg" width="280" height="280" alt="Горная дорога, покрытая лесами.">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="./img/gallery/photo-3-desktop.jpg 1x, ./img/gallery/photo-3-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="./img/gallery/photo-3-tablet.jpg 1x, ./img/gallery/photo-3-tablet@2x.jpg 2x">
+                  <img class="photo-card__picture" src="./img/gallery/photo-3-mobile.jpg" srcset="./img/gallery/photo-3-mobile@2x.jpg 2x" width="280" height="280" alt="Горная дорога, покрытая лесами.">
+                </picture>
               </a>
               <div class="photo-card__info-wrapper">
                 <div class="photo-card__text-wrapper">
@@ -111,7 +124,11 @@
             </li>
             <li class="photo-gallery__item photo-card">
               <a class="photo-card__picture-link" href="#">
-                <img class="photo-card__picture" src="./img/gallery/photo-4-mobile.jpg" width="280" height="280" alt="Мост Дьявола.">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="./img/gallery/photo-4-desktop.jpg 1x, ./img/gallery/photo-4-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="./img/gallery/photo-4-tablet.jpg 1x, ./img/gallery/photo-4-tablet@2x.jpg 2x">
+                  <img class="photo-card__picture" src="./img/gallery/photo-4-mobile.jpg" srcset="./img/gallery/photo-4-mobile@2x.jpg 2x" width="280" height="280" alt="Мост Дьявола.">
+                </picture>
               </a>
               <div class="photo-card__info-wrapper">
                 <div class="photo-card__text-wrapper">

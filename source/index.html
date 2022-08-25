@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="./img/favicons/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="./img/favicons/apple.png">
+    <link rel="manifest" href="manifest.webmanifest">
   </head>
   <body class="page-body">
 
@@ -60,7 +64,11 @@
                   <p class="feature__number">— №1 —</p>
                   <p class="feature__description description">Седона не аттракцион для туристов, там течёт своя жизнь</p>
                 </div>
-                <img class="feature__picture" src="./img/feature-city.jpg" width="320" height="260" alt="Улица города Седоны с домами и цветущими деревьями.">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="./img/features/feature-1-desktop.jpg 1x, ./img/features/feature-1-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="./img/features/feature-1-tablet.jpg 1x, ./img/features/feature-1-tablet@2x.jpg 2x">
+                  <img class="feature__picture" src="./img/features/feature-1-mobile.jpg" srcset="./img/features/feature-1-mobile@2x.jpg 2x" width="320" height="260" alt="Улица города Седоны с домами и цветущими деревьями.">
+                </picture>
               </div>
               <ul class="features__extra-list">
                 <li class="features__extra-item extra-feature">
@@ -90,7 +98,11 @@
                   <p class="feature__number">— №2 —</p>
                   <p class="feature__description description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
                 </div>
-                <img class="feature__picture" src="./img/feature-canyon.jpg" width="320" height="260" alt="Вид на Мост Дьявола в каньоне, окресности города Седоны.">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="./img/features/feature-2-desktop.jpg 1x, ./img/features/feature-2-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="./img/features/feature-2-tablet.jpg 1x, ./img/features/feature-2-tablet@2x.jpg 2x">
+                  <img class="feature__picture" src="./img/features/feature-2-mobile.jpg" srcset="./img/features/feature-2-mobile@2x.jpg 2x" width="320" height="260" alt="Вид на Мост Дьявола в каньоне, окресности города Седоны.">
+                </picture>
               </div>
             </li>
             <li class="features__item feature feature--secondary feature--secondary-first">

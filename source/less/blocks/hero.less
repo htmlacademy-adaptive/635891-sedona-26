@@ -2,6 +2,12 @@
   background-color: @brown;
   background-repeat: no-repeat;
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  background-position: center bottom;
+  background-size: cover;
 }
 
 .hero::before {
@@ -12,46 +18,53 @@
   width: 100%;
   left: 0;
   bottom: 0;
-  background-size: 100% auto;
-
-  @media (max-width: @mobile-width-only) {
-    background-image: url("../img/divider-mobile.svg");
-  }
+  background-size: cover;
+  background-image: url("../img/divider.svg");
+  background-position: center;
 }
 
 .hero__text {
   display: block;
-  margin: 0 auto;
+  margin: auto;
 }
 
 .hero--size-m {
   background-image: url("../img/hero-index-mobile.jpg");
-  height: 389px;
-  background-position: 50% 0;
-  padding-top: 90px;
+  min-height: 389px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/hero-index-mobile@2x.jpg");
+    background-size: 320px auto;
+  }
 }
 
 .hero--size-s {
   background-image: url("../img/hero-pages-mobile.jpg");
-  height: 158px;
-  padding-top: 52px;
-  background-position: 50% -56px;
+  min-height: 158px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/hero-pages-mobile@2x.jpg");
+    background-size: 320px auto;
+  }
 }
 
 @media (min-width: @tablet-width) {
   .hero--size-s,
   .hero--size-m {
     background-image: url("../img/hero-picture.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/hero-picture@2x.jpg");
+      background-size: 1200px auto;
+    }
   }
 
   .hero--size-m {
-    height: 517px;
+    min-height: 518px;
   }
 
   .hero--size-s {
-    height: 290px;
-    background-position: 50% -228px;
-    padding-top: 95px;
+    min-height: 290px;
   }
 
   .hero__text--size-m {
@@ -63,10 +76,6 @@
     width: 460px;
     height: 80px;
   }
-
-  .hero::before {
-    background-image: url("../img/divider-tablet.svg");
-  }
 }
 
 @media (min-width: @desktop-width) {
@@ -75,12 +84,6 @@
   }
 
   .hero--size-s {
-    height: 301px;
-    background-position: 50% -217px;
-    padding-top: 100px;
-  }
-
-  .hero::before {
-    background-image: url("../img/divider.svg");
+    min-height: 301px;
   }
 }

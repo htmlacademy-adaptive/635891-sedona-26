@@ -10,6 +10,23 @@
     background-color: @grey-light-extra;
   }
 
+  .feature__picture {
+    display: block;
+    object-fit: cover;
+    width: auto;
+    height: 100%;
+    object-position: center;
+  }
+
+  .feature__title {
+    margin-bottom: 11px;
+  }
+
+  .feature__number {
+    margin-bottom: 17px;
+    padding: 0;
+  }
+
   @media (max-width: @mobile-width-only) {
     .feature__text-wrap--limited {
       padding: 40px 20px 35px;
@@ -36,20 +53,6 @@
       padding-bottom: 26px;
     }
   }
-}
-
-.feature__picture {
-  display: block;
-  object-fit: cover;
-}
-
-.feature__title {
-  margin-bottom: 11px;
-}
-
-.feature__number {
-  margin-bottom: 17px;
-  padding: 0;
 }
 
 @media (min-width: @tablet-width) {
