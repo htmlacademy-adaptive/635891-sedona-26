@@ -1,30 +1,22 @@
 .developer-link {
   display: flex;
   align-items: center;
+  color: @black;
 }
 
 .developer-link span {
-  color: @black;
   margin-right: 8px;
 }
 
 .developer-link svg {
   display: block;
-  fill: @black;
 }
 
-.developer-link:hover span {
+.developer-link:hover {
   color: @blue-light;
+  transition: color ease-out 0.3s;
 }
 
-.developer-link:hover svg {
-  fill: @blue-light;
-}
-
-.developer-link:active span {
+.developer-link:active {
   color: @grey-dark-extra;
-}
-
-.developer-link:active svg {
-  fill: @grey-dark-extra;
 }

@@ -1,5 +1,15 @@
 .video-player {
   position: relative;
+  width: 280px;
+  height: 177px;
+  background-image: url("../img/gallery/video-mobile.jpg");
+  background-position: center bottom;
+  margin: auto;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/gallery/video-mobile@2x.jpg");
+    background-size: 280px auto;
+  }
 }
 
 .video-player__button {
@@ -13,4 +23,30 @@
   top: 50%;
   transform: translateX(-50%);
   margin-top: -27px;
+}
+
+@media (min-width: @tablet-width) {
+  .video-player {
+    width: 648px;
+    height: 500px;
+    background-image: url("../img/gallery/video-tablet.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/gallery/video-tablet@2x.jpg");
+      background-size: 648px auto;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .video-player {
+    width: 800px;
+    height: 500px;
+    background-image: url("../img/gallery/video-desktop.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/gallery/video-desktop@2x.jpg");
+      background-size: 800px auto;
+    }
+  }
 }
