@@ -16,6 +16,10 @@
   margin-bottom: 16px;
 }
 
+.field-group__item--control:not(:last-child) {
+  margin-bottom: 10px;
+}
+
 @media (min-width: @tablet-width) {
   .field-group__list {
     &--radio,
@@ -23,10 +27,46 @@
       display: grid;
       grid-template-columns: repeat(2, 1fr);
     }
+
+    &--right {
+      margin-left: 44px;
+    }
+
+    &--checkbox {
+      margin-left: 65px;
+    }
+
+    &--radio {
+      margin-left: 30px;
+    }
   }
 
   .field-group__title {
+    font-size: 21px;
     margin-bottom: 28px;
+  }
+
+  .field-group__title--decorated {
+    position: relative;
+    margin-bottom: 45px;
+  }
+
+  .field-group__title--decorated::before {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    background-color: #dbdbdb;
+    top: 50%;
+    left: 0;
+  }
+
+  .field-group__title--decorated span {
+    background-color: @white;
+    padding-inline: 60px;
+    position: relative;
+    z-index: 2;
+    display: inline-block;
   }
 }
 
