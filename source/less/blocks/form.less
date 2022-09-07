@@ -5,14 +5,14 @@
   color: @black-light;
 }
 
-.form__group--textarea {
-  padding-bottom: 56px;
-}
-
 @media (max-width: @mobile-width-only) {
   .form__group {
     padding: 24px 20px;
     border-top: 1px solid @grey;
+
+    &--textarea {
+      padding-bottom: 50px;
+    }
   }
 
   .form__button {
@@ -67,6 +67,7 @@
 
   .form__button {
     width: 324px;
+    padding: 20px 20px 12px 20px;
   }
 
   .form__group--checkbox {
@@ -74,7 +75,11 @@
   }
 
   .form__group--textarea {
-    padding-bottom: 40px;
+    padding-bottom: 43px;
+  }
+
+  .form__legend {
+    margin-top: 8px;
   }
 }
 
@@ -109,6 +114,10 @@
   }
 
   .form__button-wrapper {
-    margin-bottom: 60px;
+    margin-bottom: 64px;
+  }
+
+  .form__group--textarea {
+    padding-bottom: 41px;
   }
 }

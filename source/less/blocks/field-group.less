@@ -9,7 +9,7 @@
 
 .field-group__textarea {
   width: 100%;
-  padding: 16px;
+  padding: 16px 16px 4px;
 }
 
 .field-group__item:not(:last-child) {
@@ -31,15 +31,23 @@
     &--right {
       margin-left: 44px;
     }
-
-    &--checkbox {
-      margin-left: 65px;
-    }
   }
 
   .field-group__title {
     font-size: 21px;
     margin-bottom: 28px;
+
+    &--left-side {
+      margin-left: 40px;
+    }
+
+    &--rirgt-side {
+      margin-left: 8px;
+    }
+  }
+
+  .field-group__textarea {
+    padding-bottom: 14px;
   }
 
   .field-group__title--decorated {
@@ -57,16 +65,12 @@
     left: 0;
   }
 
-  .field-group__title--decorated span {
+  .field-group__caption {
     background-color: @white;
     padding-inline: 60px;
     position: relative;
     z-index: 2;
     display: inline-block;
-  }
-
-  .field-group__item--control {
-    margin-left: 30px;
   }
 }
 
@@ -92,5 +96,13 @@
 
   .field-group__item--control {
     margin-left: 0;
+  }
+
+  .field-group__title--left-side {
+    margin-left: 64px;
+  }
+
+  .field-group__title--rirgt-side {
+    margin-left: -20px;
   }
 }

@@ -15,6 +15,12 @@
   width: 100%;
 }
 
+@media (max-width: @mobile-width-only) {
+  .hotel-search__description br {
+    display: none;
+  }
+}
+
 @media (min-width: @tablet-width) {
   .hotel-search {
     padding: 59px 155px 58px;
@@ -36,6 +42,10 @@
 
 @media (min-width: @desktop-width) {
   .hotel-search {
-    padding: 61px 371px 66px;
+    padding: 59px 371px 66px;
+  }
+
+  .hotel-search__description {
+    margin-bottom: 48px;
   }
 }
