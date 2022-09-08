@@ -4,9 +4,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Седона</title>
-    <link rel="stylesheet" href="./css/style.min.css">
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="./img/favicons/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="./img/favicons/apple.png">
+    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="preload" href="./fonts/ptsans.woff2" type="font/woff2" as="font" crossorigin="anonymous" />
+    <link rel="preload" href="./fonts/ptsansbold.woff2" type="font/woff2" as="font" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./css/style.min.css">
   </head>
   <body class="page-body">
 
@@ -64,7 +68,7 @@
 
                   <source media="(min-width: 1200px)" srcset="./img/gallery/photo-1-desktop.jpg 1x, ./img/gallery/photo-1-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)" srcset="./img/gallery/photo-1-tablet.jpg 1x, ./img/gallery/photo-1-tablet@2x.jpg 2x">
-                  <img class="photo-card__picture" src="./img/gallery/photo-1-mobile.jpg" srcset="./img/gallery/photo-1-mobile@2x.jpg 2x" width="280" height="280" alt="Вечерняя дорога через пустыню.">
+                  <img class="photo-card__picture" src="./img/gallery/photo-1-mobile.jpg" srcset="./img/gallery/photo-1-mobile@2x.jpg 2x" width="280" height="280" alt="Вечерняя дорога через пустыню." loading="lazy">
                 </picture>
               </a>
               <div class="photo-card__info-wrapper">
@@ -75,7 +79,7 @@
                 <div class="photo-card__like like-rating">
                   <button class="like-rating__button" type="button" aria-label="Поставить лайк">
                     <svg width="23" height="21" aria-hidden="true" focusable="false">
-                      <use href="./img/sprite.svg#like"></use>
+                      <use href="./img/sprite.svg#like-icon"></use>
                     </svg>
                   </button>
                   <span class="like-rating__counter">1350</span>
@@ -91,7 +95,7 @@
 
                   <source media="(min-width: 1200px)" srcset="./img/gallery/photo-2-desktop.jpg 1x, ./img/gallery/photo-2-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)" srcset="./img/gallery/photo-2-tablet.jpg 1x, ./img/gallery/photo-2-tablet@2x.jpg 2x">
-                  <img class="photo-card__picture" src="./img/gallery/photo-2-mobile.jpg" srcset="./img/gallery/photo-2-mobile@2x.jpg 2x" width="280" height="280" alt="Кактусы и растительность в каньоне.">
+                  <img class="photo-card__picture" src="./img/gallery/photo-2-mobile.jpg" srcset="./img/gallery/photo-2-mobile@2x.jpg 2x" width="280" height="280" alt="Кактусы и растительность в каньоне." loading="lazy">
                 </picture>
               </a>
               <div class="photo-card__info-wrapper">
@@ -102,7 +106,7 @@
                   <div class="photo-card__like like-rating">
                     <button class="like-rating__button" type="button">
                       <svg width="23" height="21" aria-hidden="true" focusable="false">
-                        <use href="./img/sprite.svg#like"></use>
+                        <use href="./img/sprite.svg#like-icon"></use>
                       </svg>
                     </button>
                     <span class="like-rating__counter">143</span>
@@ -118,7 +122,7 @@
 
                   <source media="(min-width: 1200px)" srcset="./img/gallery/photo-3-desktop.jpg 1x, ./img/gallery/photo-3-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)" srcset="./img/gallery/photo-3-tablet.jpg 1x, ./img/gallery/photo-3-tablet@2x.jpg 2x">
-                  <img class="photo-card__picture" src="./img/gallery/photo-3-mobile.jpg" srcset="./img/gallery/photo-3-mobile@2x.jpg 2x" width="280" height="280" alt="Горная дорога, покрытая лесами.">
+                  <img class="photo-card__picture" src="./img/gallery/photo-3-mobile.jpg" srcset="./img/gallery/photo-3-mobile@2x.jpg 2x" width="280" height="280" alt="Горная дорога, покрытая лесами." loading="lazy">
                 </picture>
               </a>
               <div class="photo-card__info-wrapper">
@@ -129,7 +133,7 @@
                   <div class="photo-card__like like-rating">
                     <button class="like-rating__button" type="button" aria-label="Поставить лайк">
                       <svg width="23" height="21" aria-hidden="true" focusable="false">
-                        <use href="./img/sprite.svg#like"></use>
+                        <use href="./img/sprite.svg#like-icon"></use>
                       </svg>
                     </button>
                     <span class="like-rating__counter">96</span>
@@ -145,7 +149,7 @@
 
                   <source media="(min-width: 1200px)" srcset="./img/gallery/photo-4-desktop.jpg 1x, ./img/gallery/photo-4-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)" srcset="./img/gallery/photo-4-tablet.jpg 1x, ./img/gallery/photo-4-tablet@2x.jpg 2x">
-                  <img class="photo-card__picture" src="./img/gallery/photo-4-mobile.jpg" srcset="./img/gallery/photo-4-mobile@2x.jpg 2x" width="280" height="280" alt="Мост Дьявола.">
+                  <img class="photo-card__picture" src="./img/gallery/photo-4-mobile.jpg" srcset="./img/gallery/photo-4-mobile@2x.jpg 2x" width="280" height="280" alt="Мост Дьявола." loading="lazy">
                 </picture>
               </a>
               <div class="photo-card__info-wrapper">
@@ -156,7 +160,7 @@
                   <div class="photo-card__like like-rating">
                     <button class="like-rating__button" type="button">
                       <svg width="23" height="21" aria-hidden="true" focusable="false">
-                        <use href="./img/sprite.svg#like"></use>
+                        <use href="./img/sprite.svg#like-icon"></use>
                       </svg>
                     </button>
                     <span class="like-rating__counter">254</span>
@@ -172,7 +176,7 @@
               <video class="video-player__video video visually-hidden" poster="./img/gallery/video-mobile.jpg" width="280" height="177">
                 <source src="#">
               </video>
-              <button class="video-player__button video-player__button--play">
+              <button class="video-player__button video-player__button--play" type="button">
                 <span class="visually-hidden">Включить видео.</span>
               </button>
             </div>
@@ -182,7 +186,7 @@
 
       </main>
 
-      <footer class="footer">
+      <footer class="footer footer--catalog">
 
         <a class="footer__hashtag hashtag title title--secondary" href="https://twitter.com/hashtag/visitsedona" target="_blank">#visitsedona</a>
 

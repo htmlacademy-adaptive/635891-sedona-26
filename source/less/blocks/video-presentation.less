@@ -3,7 +3,7 @@
 }
 
 .video-presentation__title {
-  margin-bottom: 30px;
+  margin-bottom: 27px;
 }
 
 @media (max-width: @mobile-width-only) {
@@ -12,27 +12,33 @@
     border-top: 1px solid @grey;
 
     &__description {
-      margin-bottom: 38px;
+      margin: 0 20px 38px;
     }
   }
 }
 
 @media (min-width: @tablet-width) {
   .video-presentation {
-    padding: 58px 0 40px;
+    padding: 56px 0 40px;
 
     &__description {
-      margin: 0 100px 66px;
+      margin: 0 100px 88px;
     }
+  }
+
+  .video-presentation__title {
+    font-size: 30px;
+    margin-bottom: 33px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .video-presentation {
-    padding-top: 63px 200px 84px;
+    padding-bottom: 84px;
+    padding-top: 60px;
 
     &__description {
-      margin: 0 378px 72px;
+      margin: 0 378px 86px;
     }
   }
 }

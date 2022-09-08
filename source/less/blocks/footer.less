@@ -1,8 +1,12 @@
 .footer {
-  padding: 28px 20px 23px;
+  padding: 40px 20px 23px;
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  &--catalog {
+    padding: 30px 20px 20px;
+  }
 }
 
 .footer__hashtag {
@@ -25,7 +29,7 @@
 
 @media (min-width: @tablet-width) {
   .footer {
-    padding: 36px 60px 36px 45px;
+    padding: 36px 55px 36px 60px;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
@@ -42,6 +46,6 @@
 
 @media (min-width: @desktop-width) {
   .footer {
-    padding-inline: 120px;
+    padding: 36px 115px 36px 120px;
   }
 }

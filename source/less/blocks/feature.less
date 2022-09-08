@@ -9,35 +9,45 @@
   &--secondary {
     background-color: @grey-light-extra;
   }
+}
 
-  .feature__picture {
-    display: block;
-    object-fit: cover;
-    width: auto;
-    height: 100%;
-    object-position: center;
+.feature__picture {
+  display: block;
+  object-fit: cover;
+  width: auto;
+  height: 100%;
+  object-position: center;
+}
+
+.feature__title {
+  margin-bottom: 11px;
+}
+
+.feature__number {
+  padding: 0;
+  margin: 0 0 17px 0;
+}
+
+@media (max-width: @mobile-width-only) {
+  .feature__title br {
+    display: none;
   }
 
-  .feature__title {
-    margin-bottom: 11px;
+  .feature__text-wrap--limited {
+    padding: 40px 20px 38px;
   }
 
-  .feature__number {
-    margin-bottom: 17px;
-    padding: 0;
+  .feature__text-wrap--limited-second {
+    padding-bottom: 34px;
   }
 
-  @media (max-width: @mobile-width-only) {
-    .feature__text-wrap--limited {
-      padding: 40px 20px 35px;
-    }
+  .feature__text-wrap--first {
+    padding-top: 72px;
+  }
 
-    .feature__text-wrap--first {
-      padding-top: 72px;
-    }
-
+  .feature {
     &--secondary {
-      padding: 24px 20px;
+      padding: 24px 32px;
     }
 
     &--secondary-first {
@@ -62,8 +72,16 @@
 @media (min-width: @tablet-width) {
   .feature {
     &--secondary {
-      padding: 40px 33px;
+      padding: 42px 38px 42px;
     }
+
+    &--road {
+      padding-inline: 54px;
+    }
+  }
+
+  .feature__title {
+    font-size: 21px;
   }
 
   .feature__text-wrap {
@@ -76,6 +94,10 @@
     padding: 40px 30px;
   }
 
+  .feature__text-wrap--limited-second {
+    padding-top: 44px;
+  }
+
   .feature__picture-wrap {
     display: flex;
 
@@ -83,17 +105,33 @@
       flex-direction: row-reverse;
     }
   }
+
+  .feature__number {
+    margin-bottom: 24px;
+  }
 }
 
 @media (min-width: @desktop-width) {
   .feature {
     &--secondary {
-      padding: 43px;
+      padding: 44px 43px 62px;
+    }
+
+    &--road {
+      padding-inline: 63px;
     }
   }
 
   .feature__text-wrap--limited {
     width: 400px;
-    padding: 50px;
+    padding: 50px 67px;
+  }
+
+  .feature__text-wrap--bridge {
+    padding-inline: 83px;
+  }
+
+  .feature__text-wrap--limited-second {
+    padding-top: 52px;
   }
 }

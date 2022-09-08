@@ -4,9 +4,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Седона</title>
-    <link rel="stylesheet" href="./css/style.min.css">
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="./img/favicons/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="./img/favicons/apple.png">
+    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="preload" href="./fonts/ptsans.woff2" type="font/woff2" as="font" crossorigin="anonymous" />
+    <link rel="preload" href="./fonts/ptsansbold.woff2" type="font/woff2" as="font" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./css/style.min.css">
   </head>
   <body class="page-body">
 
@@ -58,21 +62,21 @@
 
             <div class="form__contacts-wrapper">
               <div class="form__group form__group--name field-group">
-                <h2 class="field-group__title title">Представьтесь:</h2>
+                <h2 class="field-group__title field-group__title--left-side title">Представьтесь:</h2>
                 <ul class="field-group__list">
-                  <li class="field-group__item">
+                  <li class="field-group__item--textfield">
                     <div class="field">
                       <label class="field__label description" for="first-name">Имя*:</label>
                       <input class="field__input" id="first-name" type="text" name="user-name" placeholder="Укажите имя" value="Пётр" required>
                     </div>
                   </li>
-                  <li class="field-group__item">
+                  <li class="field-group__item--textfield">
                     <div class="field">
                       <label class="field__label description" for="lastname">Фамилия*:</label>
                       <input class="field__input field__input--black" id="lastname" type="text" name="user-lastname" placeholder="Укажите фамилию" value="Пустота" required>
                     </div>
                   </li>
-                  <li class="field-group__item">
+                  <li class="field-group__item--textfield">
                     <div class="field">
                       <label class="field__label description" for="middle-name">Отчество:</label>
                       <input class="field__input field__input--black" id="middle-name" type="text" name="user-middle-name" placeholder="Укажите отчество" value="Викторович">
@@ -82,15 +86,15 @@
               </div>
 
               <div class="form__group form__group--contacts field-group">
-                <h2 class="field-group__title title">Контактная информация:</h2>
-                <ul class="field-group__list">
-                  <li class="field-group__item">
+                <h2 class="field-group__title field-group__title--rirgt-side title">Контактная информация:</h2>
+                <ul class="field-group__list field-group__list--right">
+                  <li class="field-group__item--textfield">
                     <div class="field field--decorated field--phone">
                       <label class="field__label description" for="contact-phone">Контактный телефон*:</label>
                       <input class="field__input field__input--phone" id="contact-phone" type="tel" name="user-phone" placeholder="Введите телефон" required>
                     </div>
                   </li>
-                  <li class="field-group__item">
+                  <li class="field-group__item--textfield">
                     <div class="field field--decorated field--mail">
                       <label class="field__label description" for="e-mail">Электронная почта*:</label>
                       <input class="field__input field__input--email" id="e-mail" type="email" name="user-email" placeholder="Введите e-mail" required>
@@ -101,71 +105,71 @@
             </div>
 
             <div class="form__group form__group--single field-group">
-              <h2 class="field-group__title title title--decorated">
-                <span>Ваше общее впечатление:</span>
+              <h2 class="field-group__title field-group__title--decorated title">
+                <span class="field-group__caption">Ваше общее впечатление:</span>
               </h2>
               <ul class="field-group__list field-group__list--radio">
-                <li class="field-group__item">
+                <li class="field-group__item field-group__item--control">
                   <div class="control">
                     <input class="control__radio control__button--custom" type="radio" id="positive-impression" name="impression" value="positive" checked>
                     <label class="control__label" for="positive-impression">
-                      <span>Скорее положительное</span>
+                      <span class="control__text">Скорее положительное</span>
                     </label>
                   </div>
                 </li>
-                <li class="field-group__item">
+                <li class="field-group__item field-group__item--control">
                   <div class="control">
                     <input class="control__radio control__button--custom" type="radio" id="negative-impression" name="impression" value="negative">
                     <label class="control__label" for="negative-impression">
-                      <span>Скорее отрицательное</span>
+                      <span class="control__text">Скорее отрицательное</span>
                     </label>
                   </div>
                 </li>
-                <li class="field-group__item">
+                <li class="field-group__item field-group__item--control">
                   <div class="control">
                     <input class="control__radio control__button--custom" type="radio" id="indifferent-impression" name="impression" value="indifferent">
                     <label class="control__label" for="indifferent-impression">
-                      <span>Затрудняюсь ответить</span>
+                      <span class="control__text">Затрудняюсь ответить</span>
                     </label>
                   </div>
                 </li>
               </ul>
             </div>
 
-            <div class="form__group form__group--single field-group">
-              <h2 class="field-group__title title title--decorated">
-                <span>Посещенные<br>достопримечательности:</span>
+            <div class="form__group form__group--checkbox form__group--single field-group">
+              <h2 class="field-group__title field-group__title--checkbox field-group__title--decorated title">
+                <span class="field-group__caption">Посещенные<br>достопримечательности:</span>
               </h2>
               <ul class="field-group__list field-group__list--checkbox">
-                <li class="field-group__item">
+                <li class="field-group__item field-group__item--control">
                   <div class="control">
                     <input class="control__checkbox control__button--custom" type="checkbox" id="bridge" name="sights" value="devil-bridge" checked>
                     <label class="control__label" for="bridge">
-                      <span>Мост Дьявола</span>
+                      <span class="control__text">Мост Дьявола</span>
                     </label>
                   </div>
                 </li>
-                <li class="field-group__item">
+                <li class="field-group__item field-group__item--control">
                   <div class="control">
                     <input class="control__checkbox control__button--custom" type="checkbox" id="mountain" name="sights" value="bell-mountain" checked>
                     <label class="control__label" for="mountain">
-                      <span>Гора-Колокол</span>
+                      <span class="control__text">Гора-Колокол</span>
                     </label>
                   </div>
                 </li>
-                <li class="field-group__item">
+                <li class="field-group__item field-group__item--control">
                   <div class="control">
                     <input class="control__checkbox control__button--custom" type="checkbox" id="park" name="sights" value="slide-park" checked>
                     <label class="control__label" for="park">
-                      <span>Слайд-парк</span>
+                      <span class="control__text">Слайд-парк</span>
                     </label>
                   </div>
                 </li>
-                <li class="field-group__item">
+                <li class="field-group__item field-group__item--control">
                   <div class="control">
                     <input class="control__checkbox control__button--custom" type="checkbox" id="cliffs" name="sights" value="red-cliffs">
                     <label class="control__label" for="cliffs">
-                      <span>Красные скалы</span>
+                      <span class="control__text">Красные скалы</span>
                     </label>
                   </div>
                 </li>

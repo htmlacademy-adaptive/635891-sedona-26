@@ -2,7 +2,7 @@
   text-align: left;
   color: @black;
   background-color: @white;
-  padding: 23px 20px 22px;
+  padding: 23px 20px 0;
 }
 
 .extra-feature__title {
@@ -11,16 +11,6 @@
 
 .extra-feature__content {
   position: relative;
-}
-
-@media (max-width: @mobile-width-only) {
-  .extra-feature__content {
-    padding: 9px 0 0 47px;
-  }
-
-  .extra-feature--last {
-    padding-bottom: 52px;
-  }
 }
 
 .extra-feature__content::before {
@@ -45,14 +35,35 @@
   background-image: url("../img/icons/feature-souvenirs.svg");
 }
 
+@media (max-width: @mobile-width-only) {
+  .extra-feature__content {
+    padding: 9px 0 0 47px;
+  }
+
+  .extra-feature--last {
+    padding-bottom: 47px;
+  }
+
+  .extra-feature__description--food br {
+    display: none;
+  }
+}
+
+@media (max-width: 1199px) {
+  .extra-feature__description--souvenirs br {
+    display: none;
+  }
+}
+
 @media (min-width: @tablet-width) {
   .extra-feature {
     text-align: center;
-    padding: 158px 35px 35px;
+    padding: 158px 32px 59px;
   }
 
   .extra-feature__title {
-    margin-bottom: 35px;
+    font-size: 21px;
+    margin-bottom: 23px;
   }
 
   .extra-feature__content::before {
@@ -77,7 +88,7 @@
 
 @media (min-width: @desktop-width) {
   .extra-feature {
-    padding: 158px 58px 79px 58px;
+    padding: 158px 58px 81px 58px;
   }
 
   .extra-feature__content::before {

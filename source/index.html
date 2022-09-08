@@ -4,11 +4,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Седона</title>
-    <link rel="stylesheet" href="./css/style.min.css">
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="./img/favicons/favicon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="./img/favicons/apple.png">
     <link rel="manifest" href="manifest.webmanifest">
+    <link rel="preload" href="./fonts/ptsans.woff2" type="font/woff2" as="font" crossorigin="anonymous" />
+    <link rel="preload" href="./fonts/ptsansbold.woff2" type="font/woff2" as="font" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./css/style.min.css">
   </head>
   <body class="page-body">
 
@@ -52,7 +54,7 @@
         <div class="about">
 
           <div class="about__intro intro">
-            <h1 class="intro__title title">Седона — небольшой городок в Аризоне,<br> заслуживающий большего!</h1>
+            <h1 class="about__title intro__title title">Седона — небольшой<br>&nbsp;городок в Аризоне, заслуживающий большего!</h1>
             <p class="intro__description description">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
           </div>
 
@@ -60,7 +62,7 @@
             <li class="features__item features__item--extended feature feature--primary feature--primary-first">
               <div class="feature__picture-wrap">
                 <div class="feature__text-wrap feature__text-wrap--limited feature__text-wrap--first">
-                  <h2 class="feature__title title">Настоящий городок</h2>
+                  <h2 class="feature__title title">Настоящий<br>&nbsp;городок</h2>
                   <p class="feature__number">— №1 —</p>
                   <p class="feature__description description">Седона не аттракцион для туристов, там течёт своя жизнь</p>
                 </div>
@@ -71,7 +73,7 @@
 
                   <source media="(min-width: 1200px)" srcset="./img/features/feature-1-desktop.jpg 1x, ./img/features/feature-1-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)" srcset="./img/features/feature-1-tablet.jpg 1x, ./img/features/feature-1-tablet@2x.jpg 2x">
-                  <img class="feature__picture" src="./img/features/feature-1-mobile.jpg" srcset="./img/features/feature-1-mobile@2x.jpg 2x" width="320" height="260" alt="Улица города Седоны с домами и цветущими деревьями.">
+                  <img class="feature__picture" src="./img/features/feature-1-mobile.jpg" srcset="./img/features/feature-1-mobile@2x.jpg 2x" width="320" height="260" alt="Улица города Седоны с домами и цветущими деревьями." loading="lazy">
                 </picture>
               </div>
               <ul class="features__extra-list">
@@ -84,21 +86,21 @@
                 <li class="features__extra-item extra-feature">
                   <div class="extra-feature__content extra-feature__content--food">
                     <h3 class="extra-feature__title title">Еда</h3>
-                    <p class="extra-feature__description description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+                    <p class="extra-feature__description extra-feature__description--food description">Всегда заказывайте фирменный бургер,<br>&nbsp;вы не разочаруетесь!</p>
                   </div>
                 </li>
                 <li class="features__extra-item extra-feature extra-feature--last">
                   <div class="extra-feature__content extra-feature__content--souvenirs">
                     <h3 class="extra-feature__title title">Сувениры</h3>
-                    <p class="extra-feature__description description">Не только китайского, но и настоящего местного производства!</p>
+                    <p class="extra-feature__description extra-feature__description--souvenirs description">Не только китайского,<br>&nbsp;но и местного производства!</p>
                   </div>
                 </li>
               </ul>
             </li>
             <li class="features__item features__item--extended feature feature--primary">
               <div class="feature__picture-wrap feature__picture-wrap--reversed">
-                <div class="feature__text-wrap feature__text-wrap--limited">
-                  <h2 class="feature__title title">Там есть мост дьявола</h2>
+                <div class="feature__text-wrap feature__text-wrap--limited-second feature__text-wrap--limited feature__text-wrap--bridge">
+                  <h2 class="feature__title title">Там есть<br>&nbsp;мост дьявола</h2>
                   <p class="feature__number">— №2 —</p>
                   <p class="feature__description description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
                 </div>
@@ -109,27 +111,27 @@
 
                   <source media="(min-width: 1200px)" srcset="./img/features/feature-2-desktop.jpg 1x, ./img/features/feature-2-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)" srcset="./img/features/feature-2-tablet.jpg 1x, ./img/features/feature-2-tablet@2x.jpg 2x">
-                  <img class="feature__picture" src="./img/features/feature-2-mobile.jpg" srcset="./img/features/feature-2-mobile@2x.jpg 2x" width="320" height="260" alt="Вид на Мост Дьявола в каньоне, окресности города Седоны.">
+                  <img class="feature__picture" src="./img/features/feature-2-mobile.jpg" srcset="./img/features/feature-2-mobile@2x.jpg 2x" width="320" height="260" alt="Вид на Мост Дьявола в каньоне, окресности города Седоны." loading="lazy">
                 </picture>
               </div>
             </li>
             <li class="features__item feature feature--secondary feature--secondary-first">
               <div class="feature__text-wrap">
-                <h2 class="feature__title title">Небольшая<br>площадь</h2>
+                <h2 class="feature__title title">Небольшая<br>&nbsp;площадь</h2>
                 <p class="feature__number">— №3 —</p>
                 <p class="feature__description description">Все интересные места находятся очень близко</p>
               </div>
             </li>
-            <li class="features__item feature feature--secondary">
+            <li class="features__item feature feature--secondary feature--road">
               <div class="feature__text-wrap">
-                <h2 class="feature__title title">Красивая<br>дорога</h2>
+                <h2 class="feature__title title">Красивая<br>&nbsp;дорога</h2>
                 <p class="feature__number">— №4 —</p>
                 <p class="feature__description description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
               </div>
             </li>
             <li class="features__item feature feature--secondary feature--secondary-last">
               <div class="feature__text-wrap">
-                <h2 class="feature__title title">Мало<br>туристов</h2>
+                <h2 class="feature__title title">Мало<br>&nbsp;туристов</h2>
                 <p class="feature__number">— №5 —</p>
                 <p class="feature__description description">Большинство едет в Гранд Каньон и толпится там</p>
               </div>
@@ -144,7 +146,7 @@
           </h2>
 
           <p class="hotel-search__description description">
-            Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне
+            Укажите предполагаемые даты поездки,<br>&nbsp;и мы покажем вам лучшие предложения гостиниц в Седоне
           </p>
 
           <button class="hotel-search__button button" type="button">Найти гостиницу</button>

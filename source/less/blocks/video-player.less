@@ -5,6 +5,7 @@
   background-image: url("../img/gallery/video-mobile.jpg");
   background-position: center bottom;
   margin: auto;
+  background-color: @blue-light;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/gallery/video-mobile@2x.jpg");
@@ -23,6 +24,13 @@
   top: 50%;
   transform: translateX(-50%);
   margin-top: -27px;
+  cursor: pointer;
+}
+
+@media (max-width: @mobile-width-only) {
+  .video-player__button {
+    left: 53%;
+  }
 }
 
 @media (min-width: @tablet-width) {
