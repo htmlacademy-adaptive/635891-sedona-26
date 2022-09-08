@@ -12,12 +12,14 @@
   padding: 16px 16px 4px;
 }
 
-.field-group__item:not(:last-child) {
+.field-group__item--textfield:not(:last-child) {
   margin-bottom: 16px;
 }
 
-.field-group__item--control:not(:last-child) {
-  margin-bottom: 10px;
+@media (max-width: @mobile-width-only) {
+  .field-group__item--control:not(:last-child) {
+    margin-bottom: 10px;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -25,7 +27,18 @@
     &--radio,
     &--checkbox {
       display: grid;
+    }
+
+    &--radio {
+      gap: 11px 16px;
+      padding: 28px 36px 42px;
       grid-template-columns: repeat(2, 1fr);
+    }
+
+    &--checkbox {
+      gap: 11px 32px;
+      padding: 28px 36px 36px 84px;
+      grid-template-columns: minmax(200px, 224px) 1fr;
     }
 
     &--right {
@@ -52,7 +65,7 @@
 
   .field-group__title--decorated {
     position: relative;
-    margin-bottom: 28px;
+    margin: 0;
   }
 
   .field-group__title--decorated::before {
@@ -78,20 +91,16 @@
   .field-group__list {
     &--radio {
       grid-template-columns: repeat(3, 1fr);
+      gap: 17px 52px;
+      padding: 45px 36px 67px 53px;
     }
 
     &--checkbox {
       grid-template-columns: repeat(4, 1fr);
       margin-left: 0;
+      gap: 16px 37px;
+      padding: 60px 36px 80px 44px;
     }
-  }
-
-  .field-group__title--decorated {
-    margin-bottom: 45px;
-  }
-
-  .field-group__title--checkbox {
-    margin-bottom: 60px;
   }
 
   .field-group__item--control {
