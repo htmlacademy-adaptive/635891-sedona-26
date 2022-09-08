@@ -13,20 +13,6 @@
   position: relative;
 }
 
-@media (max-width: @mobile-width-only) {
-  .extra-feature__content {
-    padding: 9px 0 0 47px;
-  }
-
-  .extra-feature--last {
-    padding-bottom: 47px;
-  }
-
-  .extra-feature__description br {
-    display: none;
-  }
-}
-
 .extra-feature__content::before {
   content: "";
   position: absolute;
@@ -47,6 +33,26 @@
 
 .extra-feature__content--souvenirs::before {
   background-image: url("../img/icons/feature-souvenirs.svg");
+}
+
+@media (max-width: @mobile-width-only) {
+  .extra-feature__content {
+    padding: 9px 0 0 47px;
+  }
+
+  .extra-feature--last {
+    padding-bottom: 47px;
+  }
+
+  .extra-feature__description--food br {
+    display: none;
+  }
+}
+
+@media (max-width: 1199px) {
+  .extra-feature__description--souvenirs br {
+    display: none;
+  }
 }
 
 @media (min-width: @tablet-width) {
