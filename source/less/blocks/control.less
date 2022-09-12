@@ -16,12 +16,12 @@
   opacity: 0;
 }
 
-.control__button-custom + label {
+.control__button-custom + .control__label {
   display: inline-flex;
   align-items: center;
 }
 
-.control__button-custom + label::before {
+.control__button-custom + .control__label::before {
   content: "";
   display: inline-block;
   width: 46px;
@@ -34,15 +34,15 @@
   background-position: center center;
 }
 
-.control__button-custom[type="checkbox"] + label::before {
+.control__button-custom[type="checkbox"] + .control__label::before {
   border-radius: 4px;
 }
 
-.control__button-custom[type="radio"] + label::before {
+.control__button-custom[type="radio"] + .control__label::before {
   border-radius: 50%;
 }
 
-.control__button-custom[type="checkbox"]:checked + label::after {
+.control__button-custom[type="checkbox"]:checked + .control__label::after {
   background-image: url("../img/icons/checkbox-mark.svg");
   content: "";
   position: absolute;
@@ -52,7 +52,7 @@
   left: 12px;
 }
 
-.control__button-custom[type="radio"]:checked + label::after {
+.control__button-custom[type="radio"]:checked + .control__label::after {
   background-image: url("../img/icons/radio-mark.svg");
   content: "";
   position: absolute;
@@ -62,22 +62,22 @@
   top: 15px;
 }
 
-.control__button-custom:not(:disabled) + label:hover::before {
+.control__button-custom:not(:disabled) + .control__label:hover::before {
   background-color: @grey;
 }
 
-.control__button-custom:not(:disabled) + label:active::before {
+.control__button-custom:not(:disabled) + .control__label:active::before {
   background-color: @grey-dark;
 }
 
-.control__button-custom:not(:disabled) + label:active::after {
+.control__button-custom:not(:disabled) + .control__label:active::after {
   opacity: 0.3;
 }
 
-.input:focus:not(:disabled) + label::before {
+.input:focus:not(:disabled) + .control__label::before {
   outline: 2px solid @blue-light;
 }
 
-.control__button-custom:disabled + label::before {
+.control__button-custom:disabled + .control__label::before {
   opacity: 0.3;
 }
